@@ -1,3 +1,103 @@
-body {
-	font-family: sans-serif;
+* {
+    box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: .9375rem; /* 15px */
+    font-weight: 200;
+    line-height: 1.7;
+    color: hsl(229, 6%, 66%);
+    /* Crea un paddin de 5rem abajo de la página */
+    padding-block-end: 5rem;
+}
+
+h1, h2, h3 {
+    color: hsl(234, 12%, 34%);
+    line-height: 1.2;
+}
+
+.wrapper {
+    padding-inline: 2rem;
+    /* A todo el wrapper le damos un tamaño de 1280px */
+    max-width: 1280px;
+    /* Centramos el texto */
+    margin-inline: auto;
+}
+
+.wrapper--narrow {
+    /* Al encabezado le datos un tamaño de 550px */
+    max-width: 550px;
+}
+
+header {
+    text-align: center;
+    /* Damos un margin por arriba y abajo al header */
+    margin-block: 6rem;
+}
+
+.header__title {
+    font-size: 2.25rem;
+    font-weight: 200;
+}
+
+.header__title--bold {
+    font-weight: 600;
+}
+
+.header__text {
+    font-size: 1.25rem;
+}
+
+.flex {
+    /* con grid seria */
+    /* display: grid;
+    grid-auto-columns: 1fr;
+    gap: 2rem; */
+
+    /* con flexbox */
+    display: flex;
+    gap: 2rem;
+}
+
+@media (max-width: 800px) {
+    .flex {
+        flex-direction: column;
+    }
+}
+/* si está todo puesto en grid al llegar a 800px se cambia todo a columnas  */
+/* @media (min-width: 800px) {
+    .flex {
+        grid-template-areas:
+            '...  two  ...'
+            'one  two  four'
+            'one three four'
+            '... three ...'
+        ;
+    }
+} */
+
+.flex > * {
+    /* Con flex: 1 le decimos que todas las columnas midan lo mismo*/
+    flex: 1;
+}
+
+.col {
+    /* Solucion con grid */
+
+    /* display: grid; */
+    /* Centramos supervisor y calculator  */
+    /* align-content: center;
+    gap: 2rem; */
+
+    
+    /* solucion flexbox */
+    /* border: 3px solid blue; */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    /* align-items: center; */
+}
+

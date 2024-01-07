@@ -1,0 +1,34 @@
+.card {
+    padding: 2rem;
+    border-top: 0.325rem solid;
+    border-radius: 0.25rem;
+    box-shadow: 0 1rem 1.5rem -0.5rem rgb(0 50 100 / 0.15);
+}
+
+.card__title {
+    font-size: 1.625rem;
+    margin: 0;
+}
+
+.card__img {
+    /* Para que funcione el margin-left: auto hay que ponerle el display block para que funcione como un bloque ya que si no, no se mueve */
+    display: block;
+    margin-left: auto;
+    margin-top: 2rem;
+}
+
+.border__cyan {
+    border-color: hsl(180, 62%, 55%);
+}
+
+.border__red {
+    border-color: hsl(0, 78%, 62%);
+}
+
+.border__orange {
+    border-color: hsl(34, 97%, 64%);
+}
+
+.border__blue {
+    border-color: hsl(212, 86%, 64%);
+}
