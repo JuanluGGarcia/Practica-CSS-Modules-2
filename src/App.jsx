@@ -22,32 +22,30 @@ const App = () => {
 				<div className='wrapper'>
 					<div className='flex'>
 						{/* <div className='col'> */}
-							
-							{/* Rellenando componentes con bucles y key */}
 
-							{cardInfo.map(card => (
-								<Card
-									key={v4()}
-									color={card.color}
-									title={card.title}
-									text={card.text}
-									icon={card.icon}
-								/>
-							))}
+						{/* Rellenando componentes con bucles y key */}
 
-							
+						{cardInfo.map(card => (
+							<Card
+								key={v4()}
+								color={card.color}
+								title={card.title}
+								text={card.text}
+								icon={card.icon}
+							/>
+						))}
 
-							{/* <Card color="border__cyan" title="Supervisor" text="Monitors activity to identify project roadblocks" icon="./assets/images/icon-supervisor.svg" /> */}
+						{/* <Card color="border__cyan" title="Supervisor" text="Monitors activity to identify project roadblocks" icon="./assets/images/icon-supervisor.svg" /> */}
 						{/* </div>
 
 						{/* <div className='col'> */}
-							{/* <Card color="border__red" title="Team Builder" text="Scans our talent network to create the optimal team for your project" icon="./assets/images/icon-team-builder.svg" />  */}
+						{/* <Card color="border__red" title="Team Builder" text="Scans our talent network to create the optimal team for your project" icon="./assets/images/icon-team-builder.svg" />  */}
 
-							{/* <Card color="border__orange" title="Karma" text="Regularly evaluates our talent to ensure quality" icon="./assets/images/icon-karma.svg" /> */}
+						{/* <Card color="border__orange" title="Karma" text="Regularly evaluates our talent to ensure quality" icon="./assets/images/icon-karma.svg" /> */}
 						{/* </div> */}
 
 						{/* <div className='col'> */}
-							{/* <Card color="border__blue" title="Calculator" text="Uses data from past projects to provide better delivery estimates" icon="./assets/images/icon-calculator.svg" /> */}
+						{/* <Card color="border__blue" title="Calculator" text="Uses data from past projects to provide better delivery estimates" icon="./assets/images/icon-calculator.svg" /> */}
 						{/* </div> */}
 					</div>
 				</div>
