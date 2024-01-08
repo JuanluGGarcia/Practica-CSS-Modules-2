@@ -75,6 +75,22 @@ header {
             'one three four'
             '... three ...';
     }
+
+    .flex > :nth-child(1) {
+        grid-area: one;
+    }
+    
+    .flex > :nth-child(2) {
+        grid-area: two;
+    }
+    
+    .flex > :nth-child(3) {
+        grid-area: three;
+    }
+    
+    .flex > :nth-child(4) {
+        grid-area: four;
+    } 
 }
 
 .flex > * {
@@ -100,18 +116,4 @@ header {
     /* align-items: center; */
 /* } */
 
-.flex > :nth-child(1) {
-    grid-area: one;
-}
 
-.flex > :nth-child(2) {
-    grid-area: two;
-}
-
-.flex > :nth-child(3) {
-    grid-area: three;
-}
-
-.flex > :nth-child(4) {
-    grid-area: four;
-} 
