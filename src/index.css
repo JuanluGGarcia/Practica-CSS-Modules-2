@@ -52,52 +52,66 @@ header {
 
 .flex {
     /* con grid seria */
-    /* display: grid;
-    grid-auto-columns: 1fr;
-    gap: 2rem; */
+    display: grid;
+    /* grid-auto-columns: 1fr; */
+    gap: 2rem;
 
     /* con flexbox */
-    display: flex;
-    gap: 2rem;
+    /* display: flex;
+    gap: 2rem; */
 }
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
     .flex {
         flex-direction: column;
     }
-}
+} */
 /* si está todo puesto en grid al llegar a 800px se cambia todo a columnas  */
-/* @media (min-width: 800px) {
+@media (min-width: 800px) {
     .flex {
         grid-template-areas:
             '...  two  ...'
             'one  two  four'
             'one three four'
-            '... three ...'
-        ;
+            '... three ...';
     }
-} */
+}
 
 .flex > * {
     /* Con flex: 1 le decimos que todas las columnas midan lo mismo*/
     flex: 1;
 }
 
-.col {
+/* .col { */
     /* Solucion con grid */
 
     /* display: grid; */
     /* Centramos supervisor y calculator  */
-    /* align-content: center;
-    gap: 2rem; */
+    /* align-content: center; */
+    /* gap: 2rem; */
 
     
     /* solucion flexbox */
     /* border: 3px solid blue; */
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     gap: 2rem;
-    justify-content: center;
+    justify-content: center; */
     /* align-items: center; */
+/* } */
+
+.flex > :nth-child(1) {
+    grid-area: one;
 }
 
+.flex > :nth-child(2) {
+    grid-area: two;
+}
+
+.flex > :nth-child(3) {
+    grid-area: three;
+}
+
+.flex > :nth-child(4) {
+    grid-area: four;
+} 
